@@ -1,0 +1,18 @@
+cloud:
+    local:
+        sqs: http://localhost:4566
+    aws:
+        region:
+            static: us-east-1
+        stack:
+            auto: false
+        credentials:
+            access-key: itamar
+            secret-key: itamar
+        end-point:
+            uri: https://localhost:4566/000000000000/MyQueue
+sqs:
+    queue: MyQueue
+
+server:
+    port: 8081
